@@ -1,0 +1,85 @@
+:root {
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color: #114c92;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+header {
+    top: 0rem;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+header .navbar-nav li {
+    padding-left: 2rem;
+}
+
+header .navbar-nav li a {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--white-ad-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("dots.svg");
+}
+
+#hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vw;
+    max-height: 400px;
+    padding-top: 5rem;
+    align-items: center;
+    height: auto !important;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 80vw;
+    }
+    header {
+        top: 0;
+        width: 100%;
+        background-color: var(--primary-ad-color);
+    }
+    #hero {
+        margin-top: 4.7rem;
+        max-height: 429px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #hero {
+        max-height: 534px;
+    }
+}
+
+
+/* XL */
+
+@media screen and (min-width: 1200px) {
+    #hero {
+        max-height: 634px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #hero {
+        max-height: 700px;
+    }
+}
