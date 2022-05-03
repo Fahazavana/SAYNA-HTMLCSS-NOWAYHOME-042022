@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800;900&display=swap');
-@font-face {
-    font-family: 'far_from_homecomingregular';
-    src: url(../police/Far-From-Homecoming-Updated.otf) format('OpenType');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -90,12 +84,6 @@ footer .brand img:nth-child(2) {
 
 #hero div {
     color: var(--white-ad-color);
-}
-
-#hero .titre {
-    font-family: 'far_from_homecomingregular';
-    font-size: 5em;
-    font-weight: 100;
 }
 
 #hero .description {

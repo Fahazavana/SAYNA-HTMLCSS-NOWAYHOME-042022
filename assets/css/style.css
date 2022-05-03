@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;800;900&display=swap');
+@font-face {
+    font-family: 'far_from_homecomingregular';
+    src: url(../police/Far-From-Homecoming-Updated.otf) format('OpenType');
+}
+
+
+/*
+ * PRINCIPE MOBILE FIRST 
+ */
+
 :root {
     --primary-ad-color: #b11313;
     --black-ad-color: #000000;
@@ -5,10 +16,16 @@
     --blue-color: #114c92;
 }
 
+
+/* redefinition de .container */
+
 .container {
     max-width: 90vw;
     margin: 0 auto;
 }
+
+
+/* header */
 
 header {
     top: 0rem;
@@ -36,6 +53,42 @@ header .navbar-nav li a {
     background-image: url("dots.svg");
 }
 
+
+/* Footer */
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation-footer {
+    display: block;
+}
+
+.navigation-footer .list1,
+.navigation-footer .list2 {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.navigation-footer .list1 {
+    margin-bottom: 20px;
+}
+
+.navigation-footer .list2 {
+    margin-top: 20px;
+}
+
+.navigation-footer .list1 li,
+.navigation-footer .list2 li {
+    padding-bottom: 10px;
+}
+
+footer .copyright {
+    font-size: 10px;
+}
+
 #hero {
     height: auto;
     display: flex;
@@ -48,6 +101,20 @@ header .navbar-nav li a {
     background-repeat: no-repeat;
 }
 
+#hero .titre {
+    font-family: 'far_from_homecomingregular';
+    color: var(--white-ad-color);
+    font-size: 5em;
+    font-weight: 100;
+}
+
+#hero .description {
+    color: var(--white-ad-color);
+    font-weight: bold;
+    font-size: 0.7em;
+    opacity: 0;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 80vw;
@@ -58,8 +125,61 @@ header .navbar-nav li a {
         background-color: var(--primary-ad-color);
     }
     #hero {
+        padding-top: 3em;
         margin-top: 4.7rem;
         max-height: 429px;
+    }
+    #hero .description {
+        font-size: 1.5em;
+    }
+    /* Design Footer  */
+    footer {
+        background-color: var(--black-ad-color);
+        padding: 20px 0;
+    }
+    .footer {
+        color: var(--white-ad-color);
+        text-align: center;
+        font-size: 13px;
+    }
+    .navigation-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0;
+    }
+    .navigation-footer .list1,
+    .navigation-footer .list2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation-footer li {
+        padding-left: 30px;
+    }
+    .navigation-footer li a {
+        color: var(--white-ad-color);
+        text-decoration: none;
+    }
+    .navigation-footer .list2 .formselect {
+        background-color: var(--primary-ad-color);
+        border-radius: 50px;
+        width: 100px;
+        color: var(--white-ad-color);
+        padding: 3px 15px;
+    }
+    footer .media {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    footer .media img {
+        background-color: var(--primary-ad-color);
+        color: var(--white-ad-color);
+        padding: 5px;
+        border-radius: 50%;
+    }
+    footer .copyright {
+        padding: 10px;
     }
 }
 
@@ -82,4 +202,24 @@ header .navbar-nav li a {
     #hero {
         max-height: 700px;
     }
+}
+
+#overlay {
+    position: fixed;
+    z-index: 112;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #0000007e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#overlay>.pop-up {
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
 }
