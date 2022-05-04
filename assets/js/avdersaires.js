@@ -1,15 +1,15 @@
 $(document).ready(function() {
     $(".card").hover(function() {
         $(this).toggleClass("zomm")
-        $(".card-name").toggleClass("add-bg").toggleClass("rm-bg")
-        $(".card-name>h2").animate({ 'left': '10%' });
-        $(".card-body").slideDown(1500);
+        $(".card-name", this).toggleClass("add-bg").toggleClass("rm-bg")
+        $(".card-name>h2", this).animate({ 'left': '10%' });
+        $(".card-body", this).slideDown(1500);
 
     }, function() {
         $(this).toggleClass("zomm")
-        $(".card-name").toggleClass("add-bg").toggleClass("rm-bg")
-        $(".card-name>h2").animate({ 'left': '3%' });
-        $(".card-body").slideUp(1500);
+        $(".card-name", this).toggleClass("add-bg").toggleClass("rm-bg")
+        $(".card-name>h2", this).animate({ 'left': '3%' });
+        $(".card-body", this).slideUp(1500);
     });
 
 });

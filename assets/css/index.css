@@ -5,6 +5,10 @@
     --blue-color: #114c92;
 }
 
+body {
+    background-color: var(--primary-ad-color);
+}
+
 #hero {
     background-color: var(--primary-ad-color);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(177, 19, 19, 1) 100%);
@@ -23,16 +27,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 0;
+    z-index: -0;
     width: 60%;
     height: 650px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/home2.png");
-}
-
-#lesspiderman {
-    background-color: var(--primary-ad-color);
 }
 
 #lesspiderman h1 {
