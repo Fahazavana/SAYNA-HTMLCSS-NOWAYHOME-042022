@@ -56,37 +56,43 @@ header .navbar-nav li a {
 
 /* Footer */
 
-footer ul {
+footer {
+    background-color: var(--black-ad-color);
+}
+
+footer .nav-link {
+    color: var(--white-ad-color);
+}
+
+footer .list-inline-item a {
+    background-color: var(--primary-ad-color);
+}
+
+footer .list-inline-item a .ic-1 {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.form-select {
+    width: 100px;
+    border-radius: 50px;
+    background-color: var(--primary-ad-color);
+    color: var(--white-ad-color);
+    border: 3px solid var(--white-ad-color);
+    background-image: url("select-arrow.svg") !important;
+}
+
+.footer-nav {
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navigation-footer {
-    display: block;
-}
-
-.navigation-footer .list1,
-.navigation-footer .list2 {
-    display: block;
-    padding-bottom: 10px;
-}
-
-.navigation-footer .list1 {
-    margin-bottom: 20px;
-}
-
-.navigation-footer .list2 {
-    margin-top: 20px;
-}
-
-.navigation-footer .list1 li,
-.navigation-footer .list2 li {
-    padding-bottom: 10px;
-}
-
-footer .copyright {
-    font-size: 10px;
+.rounded-circle {
+    border-radius: 50%!important;
 }
 
 #hero {
@@ -106,6 +112,11 @@ footer .copyright {
     color: var(--white-ad-color);
     font-size: 5em;
     font-weight: 100;
+    z-index: 0;
+    left: -60%;
+    margin-top: 15%;
+    position: relative;
+    display: inline-block;
 }
 
 #hero .description {
@@ -113,6 +124,24 @@ footer .copyright {
     font-weight: bold;
     font-size: 0.7em;
     opacity: 0;
+}
+
+
+/* definition/description list used on hero.html an adversaire.html */
+
+dl dt,
+dl dd {
+    display: inline;
+}
+
+dl dd::after {
+    content: "\a";
+    white-space: pre-line;
+}
+
+.card {
+    border: none;
+    background-color: inherit;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,54 +161,9 @@ footer .copyright {
     #hero .description {
         font-size: 1.5em;
     }
-    /* Design Footer  */
-    footer {
-        background-color: var(--black-ad-color);
-        padding: 20px 0;
-    }
-    .footer {
-        color: var(--white-ad-color);
-        text-align: center;
-        font-size: 13px;
-    }
-    .navigation-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2em 0;
-    }
-    .navigation-footer .list1,
-    .navigation-footer .list2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navigation-footer li {
-        padding-left: 30px;
-    }
-    .navigation-footer li a {
-        color: var(--white-ad-color);
-        text-decoration: none;
-    }
-    .navigation-footer .list2 .formselect {
-        background-color: var(--primary-ad-color);
-        border-radius: 50px;
-        width: 100px;
-        color: var(--white-ad-color);
-        padding: 3px 15px;
-    }
-    footer .media {
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-    footer .media img {
-        background-color: var(--primary-ad-color);
-        color: var(--white-ad-color);
-        padding: 5px;
-        border-radius: 50%;
-    }
-    footer .copyright {
-        padding: 10px;
+    .footer-nav {
+        flex-direction: row;
+        justify-content: space-evenly
     }
 }
 
@@ -204,7 +188,7 @@ footer .copyright {
     }
 }
 
-#overlay {
+.pop-up-overlay {
     position: fixed;
     z-index: 112;
     top: 0;
@@ -214,12 +198,9 @@ footer .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+    visibility: hidden;
 }
 
-#overlay>.pop-up {
-    width: 500px;
-    height: 200px;
-    padding: 50px;
-    text-align: center;
+.active {
+    visibility: visible;
 }

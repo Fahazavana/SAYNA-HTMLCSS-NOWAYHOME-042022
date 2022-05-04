@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    /* animation au chargement */
     $(function() {
         $(".titre").animate({ left: '0%' }, 1500);
         $("#hero > .img-title").animate({ 'background-position-x': '80%' }, 1500);
@@ -7,14 +9,7 @@ $(document).ready(function() {
     })
     $(".description").click(function() { $(this).fadeIn(); });
 
-    $(window).scroll(function() {
-        let stop = $("#spiderman").offset().top;
-        let positionY = Math.floor($(document).scrollTop());
-        if (positionY < stop) {
-            $(".img-title2").animate({ 'top': positionY + "px" });
-        }
-    });
-
+    /* Compte a rebour */
     const finDecompte = new Date("May 6, 2022 08:00:00").getTime()
     let interval = setInterval(function() {
         let maintenant = new Date().getTime();
@@ -33,7 +28,7 @@ $(document).ready(function() {
     }, 1000);
 
 
-
+    /* Hover */
     $(".button1").hover(function() {
         $(this).css({
             'background-color': 'rgba(0,0,0,0)',
@@ -91,7 +86,7 @@ $(document).ready(function() {
     });
 
     $(".nav-link").hover(function() {
-        $(this).css('text-decoration', 'line-through');
+        $(this).css({ 'text-decoration': 'line-through', 'color': 'var(--white-ad-color)' });
 
     }, function() {
         $(this).css('text-decoration', 'initial');
@@ -113,28 +108,20 @@ $(document).ready(function() {
     });
 
 
-    /*
-    $("#spider1").mouseleave(function() {
-        $(this, ">img").css({ "transform": "scale(1)" });
-        $("#spider1 > .card-body").slideUp(1500)
-    });
-    $("#spider2").mouseleave(function() {
-        $(this, ">img").css({ "transform": "scale(1)" });
-        $("#spider2 > .card-body").slideUp(1500)
-    });
-    $("#spider3").mouseleave(function() {
-        $(this, ">img").css({ "transform": "scale(1)" });
-        $("#spider3 > .card-body").slideUp(1500)
-    });*/
-
     $('[type="submit"]').mouseenter(function() {
 
     })
 
     $('[type="submit"]').click(function() {
-        $("#overlay").show();
+        $(".pop-up-overlay").addClass("active");
     });
-    $("#form-pop-up").click(function() {
-        $("#overlay").hide();
+    $(".fermer").click(function() {
+        $(".pop-up-overlay").removeClass("active");
+    });
+
+    $(".ic-1").hover(function() {
+        $(this).css({ 'filter': 'invert(1)' });
+    }, function() {
+        $(this).css({ 'filter': 'invert(0)' })
     });
 });

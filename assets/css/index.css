@@ -31,14 +31,6 @@
     background-image: url("../img/home2.png");
 }
 
-.titre {
-    z-index: 0;
-    left: -60%;
-    margin-top: 15%;
-    position: relative;
-    display: inline-block;
-}
-
 #lesspiderman {
     background-color: var(--primary-ad-color);
 }

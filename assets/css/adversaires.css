@@ -1,301 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    font-weight: 200;
-}
-
-.conteneur {
-    width: 80%;
-    margin: 0 auto;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
 :root {
     --primary-ad-color: #f1c530;
     --black-ad-color: #000000;
     --white-ad-color: #ffffff;
 }
 
-.brand-mobile {
+body {
+    background-color: var(--primary-ad-color);
+}
+
+#hero {
+    background-size: 100% 100%;
+    background-image: url(../img/img7.png);
+}
+
+#hero .titre {
+    margin-top: -15%!important;
+}
+
+#adversaire {
+    padding: 2rem 0;
+}
+
+#adversaire .card-body {
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0 0 2rem 2rem;
+    border-left: 0.5rem solid rgba(0, 0, 0, 0.8);
+    border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0.1rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
     display: none;
 }
 
+#adversaire img {
+    border-top: 5%;
+}
 
-/* Design Navigation */
+.col-md-4 {
+    margin-top: 2rem;
+}
 
-#header-top nav {
+.card {
     background-color: var(--primary-ad-color);
-    padding: 15px 0;
-}
-
-#header-top nav .navigbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#header-top nav .brand img,
-footer .brand img {
-    padding-left: 20px;
-}
-
-#header-top nav .brand img:nth-child(2),
-footer .brand img:nth-child(2) {
-    padding-bottom: 15px;
-}
-
-#header-top nav .menu ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#header-top nav .menu ul li {
-    margin-left: 70px;
-    font-size: 20px;
-}
-
-#header-top nav .menu ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--white-ad-color);
-}
-
-
-/* La partie Hero Design */
-
-#hero {
-    background-image: url("../img/img7.png");
-    height: 550px;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: cover;
-}
-
-#hero div {
-    color: var(--white-ad-color);
-}
-
-#hero .description {
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-#hero .box {
     position: relative;
-    top: 25%;
+    z-index: 5;
 }
 
-
-/* La section des cartes Design */
-
-#card-section {
-    background-color: var(--primary-ad-color);
-    padding-top: 40px;
+.card-name {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
 }
 
-#card-section .card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.card-name>h2 {
+    font-size: 20px;
+    position: relative;
+    left: 3%;
+    margin: 0;
+    padding: 2px;
 }
 
-#card-section .card-hero {
-    border: 6px solid var(--black-ad-color);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 300px;
-    height: 600px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px var(--black-ad-color);
+.add-bg {
+    animation: bgchange 2s;
+    background-color: rgba(17, 75, 146, 1);
 }
 
-#card-section .card-hero .card-image {
-    background-color: var(--white-ad-color);
-    height: 180px;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
+.rm-bg {
+    animation: rmchange 2s;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-#card-section .card-hero:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    color: var(--white-ad-color);
-    background-color: var(--black-ad-color);
-}
-
-
-/* Ajout des images par carte */
-
-#card-section .card-hero .card-image-1 {
-    background-image: url(../img/img8.png);
-}
-
-#card-section .card-hero .card-image-2 {
-    background-image: url(../img/img9.png);
-}
-
-#card-section .card-hero .card-image-3 {
-    background-image: url(../img/img10.png);
-}
-
-
-/* Design carte contenu */
-
-#card-section .card-hero .card-title {
-    text-align: center;
-    font-weight: bold;
-}
-
-#card-section .card-hero .card-content {
-    padding: 15px;
-    font-size: 15px;
-}
-
-#card-section .card-hero .card-content p {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-}
-
-#card-section .card-hero .card-content span {
-    font-weight: bold;
-}
-
-
-/* Design Footer  */
-
-footer {
-    background-color: var(--black-ad-color);
-    padding: 20px 0;
-}
-
-.footer {
-    color: var(--white-ad-color);
-    text-align: center;
-    font-size: 13px;
-}
-
-.navigation-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em 0;
-}
-
-.navigation-footer .list1,
-.navigation-footer .list2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation-footer li {
-    padding-left: 30px;
-}
-
-.navigation-footer li a {
-    color: var(--white-ad-color);
-    text-decoration: none;
-}
-
-.navigation-footer .list2 .formselect {
-    background-color: var(--primary-ad-color);
-    border-radius: 50px;
-    width: 100px;
-    color: var(--white-ad-color);
-    padding: 3px 15px;
-}
-
-footer .media {
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-footer .media img {
-    background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
-    padding: 5px;
-    border-radius: 50%;
-}
-
-footer .copyright {
-    padding: 10px;
-}
-
-
-/* Mobile */
-
-@media screen and (max-width: 768px) {
-    nav .menu {
-        display: none;
+@keyframes rmchange {
+    from {
+        background-color: rgba(17, 75, 146, 1);
     }
-    #hero .titre {
-        font-family: 'far_from_homecomingregular';
-        font-size: 5em;
-        font-weight: 100;
-    }
-    #hero .description {
-        font-weight: bold;
-        font-size: 1em;
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .conteneur {
-        width: 90%;
-        margin: 0 auto;
+@keyframes bgchange {
+    from {
+        background-color: rgba(0, 0, 0, 0.8);
     }
-    #header-top {
-        display: none;
+    to {
+        background-color: rgba(17, 75, 146, 1);
     }
-    .brand-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20%;
-    }
-    #hero .titre {
-        font-family: 'far_from_homecomingregular';
-        font-size: 2em;
-        font-weight: 100;
-    }
-    #hero .description {
-        font-weight: bold;
-        font-size: 0.7em;
-    }
-    /* Footer mobile*/
-    .navigation-footer {
-        display: block;
-    }
-    .navigation-footer .list1,
-    .navigation-footer .list2 {
-        display: block;
-        padding-bottom: 10px;
-    }
-    .navigation-footer .list1 {
-        margin-bottom: 20px;
-    }
-    .navigation-footer .list2 {
-        margin-top: 20px;
-    }
-    .navigation-footer .list1 li,
-    .navigation-footer .list2 li {
-        padding-bottom: 10px;
-    }
-    footer .copyright {
-        font-size: 10px;
-    }
+}
+
+.zomm {
+    transform: scale(1.2);
 }
