@@ -9,25 +9,6 @@ $(document).ready(function() {
     })
     $(".description").click(function() { $(this).fadeIn(); });
 
-    /* Compte a rebour */
-    const finDecompte = new Date("May 6, 2022 08:00:00").getTime()
-    let interval = setInterval(function() {
-        let maintenant = new Date().getTime();
-        let tempsRestant = finDecompte - maintenant;
-        let jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
-        let heures = Math.floor((tempsRestant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
-        let secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
-        if (tempsRestant < 0) {
-            clearInterval(interval)
-            $("#decompte").text("Temps écoulé")
-        } else {
-            let decompte = `${jours} jour et ${heures}:${minutes}:${secondes}`
-            $("#decompte").text(decompte);
-        }
-    }, 1000);
-
-
     /* Hover */
     $(".button1").hover(function() {
         $(this).css({
@@ -108,15 +89,17 @@ $(document).ready(function() {
     });
 
 
-    $('[type="submit"]').mouseenter(function() {
 
-    })
+
+
 
     $('[type="submit"]').click(function() {
-        $(".pop-up-overlay").addClass("active");
+        $(this).preventDefault();
+        $(".pop-up-overlay", this).toggleClass("d-none")
     });
+
     $(".fermer").click(function() {
-        $(".pop-up-overlay").removeClass("active");
+        $(".pop-up-overlay").addClass("d-none");
     });
 
     $(".ic-1").hover(function() {

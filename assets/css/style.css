@@ -91,10 +91,6 @@ footer .list-inline-item a .ic-1 {
     align-items: center;
 }
 
-.rounded-circle {
-    border-radius: 50%!important;
-}
-
 #hero {
     height: auto;
     display: flex;
@@ -110,11 +106,9 @@ footer .list-inline-item a .ic-1 {
 #hero .titre {
     font-family: 'far_from_homecomingregular';
     color: var(--white-ad-color);
-    font-size: 5em;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 100;
-    z-index: 0;
     left: -60%;
-    margin-top: 15%;
     position: relative;
     display: inline-block;
 }
@@ -122,8 +116,12 @@ footer .list-inline-item a .ic-1 {
 #hero .description {
     color: var(--white-ad-color);
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: clamp(1.5em, 3vw, 3em);
     opacity: 0;
+}
+
+h1 {
+    font-family: 'far_from_homecomingregular';
 }
 
 
@@ -140,6 +138,7 @@ dl dd::after {
 }
 
 .card {
+    padding: 0;
     border: none;
     background-color: inherit;
 }
@@ -157,9 +156,6 @@ dl dd::after {
         padding-top: 3em;
         margin-top: 4.7rem;
         max-height: 429px;
-    }
-    #hero .description {
-        font-size: 1.5em;
     }
     .footer-nav {
         flex-direction: row;
@@ -190,15 +186,13 @@ dl dd::after {
 
 .pop-up-overlay {
     position: fixed;
-    z-index: 112;
     top: 0;
     width: 100vw;
     height: 100%;
-    background-color: #0000007e;
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
 }
 
 .active {

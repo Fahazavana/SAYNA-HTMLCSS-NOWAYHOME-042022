@@ -12,4 +12,6 @@ $(document).ready(function() {
         $(".card-body", this).slideUp(1500);
     });
 
+
+
 });

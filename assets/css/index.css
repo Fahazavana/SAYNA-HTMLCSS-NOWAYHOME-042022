@@ -24,23 +24,20 @@ body {
 }
 
 #hero .img-title2 {
-    position: absolute;
     top: 0;
     right: 0;
-    z-index: -0;
-    width: 60%;
-    height: 650px;
+    z-index: 0;
+    width: 200px;
+    height: 510px;
+    position: absolute;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/home2.png");
-}
-
-#lesspiderman h1 {
-    font-size: 35px;
+    border: 3px solid green;
 }
 
 .cta {
-    margin-bottom: 40px;
+    margin: 2rem 0;
 }
 
 .button1 {
@@ -55,6 +52,10 @@ body {
     color: var(--white-ad-color);
     border-radius: 40px;
     padding: 15px 20px;
+}
+
+#lesspiderman h1 {
+    font-size: 35px;
 }
 
 .card-text {
@@ -77,21 +78,22 @@ body {
 }
 
 #spiderman {
-    color: var(--white-ad-color);
     background-color: var(--blue-color);
-    height: 550px;
     background-image: url("../img/img5.png");
     background-position: center left;
-    background-size: auto;
     background-repeat: no-repeat;
+    background-size: auto;
+    color: var(--white-ad-color);
+    height: 550px;
     padding: 20px 0;
 }
 
-h1 {
+
+/* h1 {
     font-family: 'far_from_homecomingregular';
     font-size: 35px;
     margin-bottom: 30px;
-}
+} */
 
 #spiderman form {
     position: relative;
@@ -152,4 +154,10 @@ input[type=submit] {
 .newsletter-formulaire input[type=submit] {
     background-color: white;
     color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+    #hero .container {
+        margin-top: 100px;
+    }
 }

@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    /* Spiderman scroll */
-    /*$(window).scroll(function() {
-        let stop = $("#spiderman").offset().top;
+    /* /* Spiderman scroll */
+    let stop = $("#spiderman").offset().top + $("#spiderman").height();
+    $(window).scroll(function() {
         let positionY = Math.floor($(document).scrollTop());
-        if (positionY > stop) {
-            $(".img-title2").removeClass("sticky-top");
+        if (positionY < stop) {
+            $(".img-title2").css({ 'transform': `translateY(${positionY}px)` });
         }
-    }); */
+    });
 
 });
