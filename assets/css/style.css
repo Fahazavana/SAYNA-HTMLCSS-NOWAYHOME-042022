@@ -4,6 +4,15 @@
     src: url(../police/Far-From-Homecoming-Updated.otf) format('OpenType');
 }
 
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+}
+
+.font-spider {
+    font-family: 'far_from_homecomingregular', sans-serif;
+}
+
 
 /*
  * PRINCIPE MOBILE FIRST 

@@ -53,135 +53,143 @@
     </header>
     <main>
         <section id="hero">
-            <div class="img-title">
-                <div class="img-title2"></div>
-                <div class="container">
-                    <h1 class="titre">SPIDERMAN</h1>
-                    <div class="cta">
-                        <button type="button" class="btn button1 me-5">
-                            Voir les héros
-                        </button>
-                        <button type="button" class="btn button2">
-                            Voir les adversaires
-                        </button>
+            <div class="imgSpider">
+            </div>
+            <div class="container">
+                <h1 class="titre">
+                    SPIDERMAN
+                </h1>
+                <!-- Desktop version -->
+                <p class="description d-md-none">
+                    L'araigné simpa du quartier !
+                </p>
+                <div class="mb-3 mt-md-5">
+                    <a href="hero.html" class="btn button1 "> Voir les héros</a>
+                    <a href="hero.html" class="btn button2 ms-5"> Voir les
+                        Adversaires</a>
+                </div>
+                <!-- Desktop version -->
+                <p class="description d-none d-md-block">
+                    L'araigné simpa du quartier !
+                </p>
+                <audio class="mt-4" src="./assets/audio/audio1.mp3" controls></audio>
+            </div>
+        </section>
+
+
+        <section id="lesspiderman">
+            <div class="container">
+                <div class="text-center text-md-start pt-5">
+                    <h2 class="font-spider">
+                        LES SPIDERMANS AUX CINEMA
+                    </h2>
+                    <p class="my-4">
+                        Spiderman a pu bénéficier de reboot qui on permit d'adapter ses histoires pour chaque générations !
+                    </p>
+                </div>
+                <div class="row align-items-md-start">
+                    <!-- Spyder 1-->
+                    <div class="col-md-4  card py-25">
+                        <img class="img-fluid" src="./assets/img/img3.png" alt="Tobéy Maguire">
+                        <div class="card-body my-4">
+                            <p class="mb-0">
+                                Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobéy Maguire. Un quatrième était prévu mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur de
+                                Sony).
+                            </p>
+                            <p>
+                                Cette première trilogie a connu un gand succès auprè des fans et du grand public. L'épisode 3 reste à ce jour un des films les plus chers de l'histoire du cinéma
+                            </p>
+                        </div>
+                        <a href="adversaire.html" class="btn button1">Voir ses
+                            adversaires</a>
                     </div>
-                    <p class="description">L’araignée sympa du quartier!</p>
-                    <audio class="mt-4" src="./assets/audio/audio1.mp3" controls></audio>
+                    <!-- Spyder 2-->
+                    <div class="col-md-4 card py-25">
+                        <img class="img-fluid" src="./assets/img/img2.png" alt="Andrew Garfield">
+                        <div class="card-body my-4">
+                            <p>
+                                The amazing Spiderman est sortit en 2012, C'est Andrew Garfield qui incarne le héro et Mark Webb à la réalisation. Un deuxième volet, The amazing Spider-Man : le destin d'un héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième
+                                et un quatrième film étaient prévus pour 2016 et 2018. finalement Marvl et Sonytrouvent un accord pour introduire Spiderman dans l'univers cinématographique Marvel et abandonne ainsi The Amzing Spider-Man.
+                            </p>
+                        </div>
+                        <a href="adversaire.html" class="btn button1">Voir ses
+                            adversaires</a>
+                    </div>
+                    <!-- Spyder 3-->
+                    <div class="col-md-4 card py-25">
+                        <img class="img-fluid" src="./assets/img/img4.png" alt="Tom Halland">
+                        <div class="card-body my-4">
+                            <p class="m-0">
+                                Spiderman, désormais incarné par Tom Holland, apparait pour la première fois dans l'univers Marvel avec Captain America: Civil War, Sorti en 2016. Par la suite, une trilogie de films lui est consacrée:
+                            </p>
+                            <ul>
+                                <li>Spyderman: Homecomming (2017)</li>
+                                <li>Spyderman: Far From Home (2019)</li>
+                                <li>Spyderman: No Way Home (2021)</li>
+                            </ul>
+                            <p>
+                                Le héro est également présent dans Avengers Infinity War et Avenger End of Game, combattant au coté des Avengers.
+                            </p>
+                        </div>
+
+                        <a href="adversaire.html" class="btn button1">Voir ses
+                            adversaires</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="lesspiderman" class="pb-5">
-            <div class="container text-white">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1 class="text-uppercase">Les Spidermans au cinéma</h1>
-                        <p>
-                            Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires pour chaque génération !
-                        </p>
-                    </div>
+
+        <section id="spiderman">
+            <div class="container py-25">
+                <div class="col-md-6 mx-auto me-md-0">
+                    <h2 class="font-spider text-center">DEVIENS SPIDERMAN</h2>
+                    <p class=" text-center">
+                        Remplis le formulaire ci dessous afin de recevoir ton propre costume
+                    </p>
+                    <form class="col-md-10 mx-auto" action="." method="post">
+                        <input class="form-control mb-4" type="text" name="nom" id="nom" placeholder="Nom">
+                        <input class="form-control mb-4" type="text" name="prenom" id="prenom" placeholder="Prénom">
+                        <input class="form-control mb-4" type="text" name="taille" id="taille" placeholder="Taille (cm)">
+                        <input class="form-control mb-4" type="text" name="poids" id="poids" placeholder="Poids (kg)">
+                        <input class="form-control mb-4" type="email" name="email" id="email" placeholder="Addresse e-mail">
+                        <input class="btn button3" type="submit" value="Envoyer">
+                    </form>
                 </div>
+            </div>
+        </section>
+
+
+        <!-- NewsLetter-->
+        <section id="newsletter" class="d-flex  align-items-start py-5">
+            <div class="container py-25">
                 <div class="row">
-                    <div id="spider1" class="col-md-4 card card-unique">
-                        <img src="./assets/img/img2.png" class="img-fluid p-3" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur)
-                                et Sony. Cette première trilogie a connu un grand succès auprès des fans et du grand public. L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
-                            </p>
-                        </div>
-                        <button type="button" class="btn button1 w-md-50 mx-auto">
-                            Voir ses adversaires
-                        </button>
+                    <div class="col-12 col-md-7 text-center text-md-start ">
+                        <h2 class="font-spider">
+                            INSCRIT TOI A NOTRE NEWS LETTER
+                        </h2>
+                        <p> L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter ! </p>
                     </div>
-                    <div id="spider2" class="col-md-4 card card-unique">
-                        <img src="./assets/img/img3.png" class="img-fluid p-3" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                The Amazing Spiderman est sorti en 2012, c’est Andrew Garfield qui incarne le héros et Marc Webb à la réalisation. Un deuxième volet, The Amazing Spider-Man : Le destin d'un héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième
-                                et quatrième film étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The Amazing Spider-Man.
-                            </p>
-                        </div>
-                        <button type="button" class="btn button1 w-md-50 mx-auto">
-                            Voir ses adversaires
-                        </button>
-                    </div>
-                    <div id="spider3" class="col-md-4 card card-unique">
-                        <img src="./assets/img/img4.png" class="img-fluid p-3" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                Spiderman, désormais incarné par Tom Holland, apparaît pour la première fois dans l’univers Marvel avec Captain America : Civil War, sorti en 2016. Par la suite, une trilogie de films lui est consacrée :
-                            </p>
-                            <ul>
-                                <li>Spiderman : Homecoming (2017)</li>
-                                <li>Spiderman : Far From Home (2019)</li>
-                                <li>Spiderman : No Way Home (2021)</li>
-                            </ul>
-                            <p>
-                                Le héro est également présent dans Avengers Infinity War et Avengers End Game, combattant au côté des Avengers.
-                            </p>
-                        </div>
-                        <button type="button" class="btn button1 w-md-50 mx-auto">
-                            Voir ses adversaires
-                        </button>
+                    <div class=" col-8 col-md-6  ms-md-0 my-5">
+                        <form action="." method="post">
+                            <div class="col-md-10 mb-5">
+                                <input class="form-control bg-transparent mb-4" type="text" name="nomPrenom" id="nomPrenom" placeholder="Nom Prénom">
+                                <input class="form-control bg-transparent mb-4" type="email" name="email2" id="email2" placeholder="Adresse e-mail">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="check" id="check" value="checkedValue">
+                                <label class="form-check-label" for="check">
+                                    Je connais et j'accepte la <a class="text-white" href="#">la politique de
+                                        confidentialité </a> de Sayna X Marvel
+                                </label>
+                            </div>
+                            <input class="btn button1" type="submit" value="S 'incrire à la newsletter">
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <section id="spiderman">
-        <div class="container text-center">
-            <div class="spider-content float-end">
-                <div class="spiderman-head">
-                    <h1 class="text-uppercase">Deviens Spiderman</h1>
-                    <p>
-                        Rempli le formulaire ci dessous afin de recevoir ton propre costume.
-                    </p>
-                </div>
-                <div class="spiderman-formulaire text-center">
-                    <form>
-                        <input class="form-spiderman" type="text" placeholder="Nom" />
-                        <input class="form-spiderman" type="text" placeholder="Prenom" />
-                        <input class="form-spiderman" type="text" placeholder="Taille(cm)" />
-                        <input class="form-spiderman" type="text" placeholder="Poids en (kg)" />
-                        <input class="form-spiderman" type="email" name="" id="" placeholder="Adresse email" />
-                        <input class="form-button button3" type="submit" value="Envoyer" />
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-white">
-                    <div class="newsletter-head">
-                        <h1 class="text-uppercase">Inscrit toi a la newsletter</h1>
-                        <p>
-                            L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter!
-                        </p>
-                    </div>
-                    <div class="newsletter-formulaire text-center">
-                        <form>
-                            <input class="form-newsletter" type="text" placeholder="Nom" />
-                            <div>
-                                <input class="form-newsletter" type="email" name="" id="" placeholder="Adresse email" />
-                            </div>
-                            <div>
-                                <div class="d-flex text-center justify-content-center align-items-center">
-                                    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
-                                    <label for="subscribeNews" class="label pt-4">Je reconnais accepter la politique de
-                                        confidentialité de
-                                        Sayna X Marvel.</label>
-                                </div>
-                            </div>
-                            <input class="form-button btn button1" type="submit" value="Envoyer" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <nav class="d-flex flex-column pt-5">
             <div class="container mb-5">

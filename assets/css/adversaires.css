@@ -29,6 +29,7 @@ body {
     border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
     border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
     box-shadow: 0.1rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
+    background-color: var(--primary-ad-color);
     display: none;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .card {
-    background-color: var(--primary-ad-color);
+    padding: 1rem 2rem;
     position: relative;
     border: 2px solid green;
 }

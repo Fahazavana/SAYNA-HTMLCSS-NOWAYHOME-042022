@@ -6,38 +6,132 @@
 }
 
 body {
-    background-color: var(--primary-ad-color);
+    background-repeat: no-repeat;
+    color: var(--white-ad-color);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(177, 19, 19, 1) 25%);
+}
+
+h2.font-spider {
+    position: relative;
+    left: -100%
+}
+
+#hero .container {
+    margin-top: 15%;
 }
 
 #hero {
-    background-color: var(--primary-ad-color);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(177, 19, 19, 1) 100%);
-}
-
-#hero .img-title {
-    width: 100%;
-    background-size: 50%;
+    background-size: 70% 60%;
     background-position-x: -60%;
-    background-position-y: 0%;
+    background-position-y: 7%;
     background-repeat: no-repeat;
     background-image: url("../img/home1.png");
 }
 
-#hero .img-title2 {
-    top: 0;
+.imgSpider {
+    position: absolute;
     right: 0;
     z-index: 0;
-    width: 200px;
-    height: 510px;
-    position: absolute;
+    width: 300px;
+    background-position: top right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("../img/home2.png");
-    border: 3px solid green;
 }
 
-.cta {
-    margin: 2rem 0;
+#lesspiderman {
+    padding: 2.5rem 0;
+}
+
+#lesspiderman .card {
+    margin-bottom: 2.5rem;
+}
+
+#lesspiderman img {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    height: auto;
+    display: block;
+    max-width: 90%;
+}
+
+#lesspiderman .card-body {
+    display: none;
+}
+
+#lesspiderman p {
+    text-align: center;
+}
+
+#lesspiderman ul {
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+#lesspiderman ul li {
+    text-align: center;
+}
+
+#spiderman {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: var(--blue-color);
+    background-image: url("../img/img5.png");
+}
+
+#spiderman input {
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+
+#spiderman input[type="submit"] {
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+#spiderman input[type="text"],
+#spiderman input[type="email"] {
+    border-color: var(--white-ad-color);
+    border-radius: 30px;
+    color: var(--black-ad-color);
+    margin: 10px auto;
+    padding: 5px 10px;
+    width: 375px;
+}
+
+#spiderman input[type="text"]::placeholder,
+#spiderman input[type="email"]::placeholder {
+    color: rgba(41, 41, 41, 0.95)
+}
+
+#newsletter {
+    min-height: 30vw;
+    background-position: 250% 100%;
+    background-size: 80% 70%;
+    background-repeat: no-repeat;
+    background-image: url("../img/img6.png");
+}
+
+#newsletter input[type="text"],
+#newsletter input[type="email"] {
+    margin-bottom: 30px;
+    border: 1px solid var(--white-ad-color);
+    border-radius: 1.25rem;
+}
+
+#newsletter input[type="text"]::placeholder,
+#newsletter input[type="email"]::placeholder {
+    color: var(--white-ad-color);
+}
+
+#newsletter .form-check {
+    margin-top: 1rem;
 }
 
 .button1 {
@@ -47,117 +141,81 @@ body {
     padding: 15px 20px;
 }
 
-.cta .button2 {
+.button2 {
     border: var(--white-ad-color) 2px solid;
     color: var(--white-ad-color);
     border-radius: 40px;
     padding: 15px 20px;
 }
 
-#lesspiderman h1 {
-    font-size: 35px;
-}
-
-.card-text {
-    text-align: justify;
-}
-
-.card-unique {
-    background-color: inherit;
-    border: inherit;
-}
-
-.card-unique ul {
-    list-style-type: disc;
-    padding: 0;
-    margin: 0;
-}
-
-.card-body {
-    display: none;
-}
-
-#spiderman {
-    background-color: var(--blue-color);
-    background-image: url("../img/img5.png");
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: auto;
-    color: var(--white-ad-color);
-    height: 550px;
-    padding: 20px 0;
-}
-
-
-/* h1 {
-    font-family: 'far_from_homecomingregular';
-    font-size: 35px;
-    margin-bottom: 30px;
-} */
-
-#spiderman form {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-#spiderman .spiderman-formulaire .form-spiderman,
-input[type=submit] {
-    width: 375px;
-    border-radius: 30px;
-    color: var(--black-ad-color);
-    border-color: var(--white-ad-color);
-    padding: 5px;
-    margin: 10px auto;
-}
-
-input[type=submit] {
-    width: 200px;
-    color: var(--white-ad-color);
+.button3 {
+    border: var(--white-ad-color) 2px solid;
     background-color: transparent;
-    padding: 10px 20px;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
 }
 
-#spiderman ::placeholder {
+#lesspiderman .button1,
+#spiderman .button3,
+#newsletter .button1 {
+    display: block;
+    margin: auto;
+}
+
+#newsletter .button2 {
+    background-color: var(--white-ad-color);
     color: var(--black-ad-color);
 }
 
-#newsletter {
-    background-color: var(--primary-ad-color);
-    height: 550px;
-    background-image: url("../img/img6.png");
-    background-position: center right;
-    background-size: 700px;
-    background-repeat: no-repeat;
-    padding: 20px 0;
-}
-
-.newsletter-formulaire {
-    margin-top: 70px;
-}
-
-.newsletter-formulaire input[type=text],
-.newsletter-formulaire input[type=email] {
-    border-radius: 20px;
-    width: 400px;
-    margin-bottom: 30px;
-    padding: 5px 10px;
-    background-color: #ffffff00;
-    border-color: white;
-}
-
-::placeholder {
-    color: white;
-}
-
-.newsletter-formulaire input[type=submit] {
-    background-color: white;
-    color: #000000;
-}
-
-@media screen and (min-width: 768px) {
-    #hero .container {
-        margin-top: 100px;
+@media screen and (max-width:375px) {
+    #spiderman .container div {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
     }
+    #spiderman .container div a {
+        font-size: small;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #lesspiderman p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #lesspiderman ul {
+        margin-left: 0;
+        display: block;
+        width: fit-content;
+    }
+    #lesspiderman ul li {
+        text-align: justify;
+    }
+    #newsletter {
+        min-height: 30vw;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image: url("../img/img6.png");
+    }
+    #lesspiderman .card {
+        margin-bottom: 0;
+    }
+    .imgSpider {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .imgSpider {
+        width: 600px;
+    }
+}
+
+#hero .container,
+#lesspiderman .container,
+#spiderman .container {
+    position: relative;
+    z-index: 1;
 }
