@@ -6,136 +6,81 @@
     --blue-color: #114c92;
 }
 
+body {
+    color: var(--white-ad-color);
+    background-color: var(--primary-ad-color);
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+}
+
 #hero {
     background-color: var(--yellow-color);
-    background-image: url("../img/img55.png");
-    background-size: auto;
-    background-position: center right;
+}
+
+.imgSpider {
+    right: 0;
+    z-index: 0;
+    width: 300px;
+    position: absolute;
+    background-position: top right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/img55.png);
 }
 
 
 /* Design de la partie Antenne */
 
 #antenne {
-    background-color: var(--primary-ad-color);
-    padding: 90px 0px;
-}
-
-#antenne .antenne-header {
-    color: var(--white-ad-color);
-    margin-bottom: 30px;
-}
-
-#antenne .antenne-header h1,
-#saynaxmarvel h1 {
-    font-family: 'far_from_homecomingregular';
-    font-size: 2.3em;
-    font-weight: lighter;
-}
-
-#antenne .antenne-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 3rem 0;
 }
 
 #antenne form {
     display: flex;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#antenne .formulaire {
-    margin: 0 auto;
+#antenne input,
+#antenne textarea {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
-#antenne .formulaire .form-antenne,
-input[type=submit] {
-    width: 375px;
-    border-radius: 30px;
-    padding: 8px 10px;
-    /* background-color: #ffffff00; */
-    background-color: transparent;
-    color: var(--white-ad-color);
-    border-color: var(--white-ad-color);
-    margin-top: 30px;
+#antenne .btn.button2 {
+    border: 2px solid white;
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
 }
 
-input[type=submit] {
-    width: 200px;
-    margin: 20px auto;
+#antenne input::placeholder,
+#antenne textarea::placeholder {
+    color: white;
 }
-
-input[type=submit]:hover {
-    background-color: var(--black-ad-color);
-}
-
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--white-ad-color);
-    opacity: 1;
-    /* Firefox */
-}
-
-
-/*  Design de la partie SAYNA X MARVEL */
 
 #saynaxmarvel {
+    padding: 3rem 0;
     background-color: var(--blue-color);
-    color: var(--white-ad-color);
-    padding: 60px 0px;
 }
 
-#saynaxmarvel .saynaxmarvel-body .box-text {
-    width: 510px;
-    text-align: justify;
-    text-justify: inter-word;
+#saynaxmarvel .btn.button3 {
+    margin-top: 20px;
+    width: 150px;
 }
 
-#saynaxmarvel .saynaxmarvel-body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#saynaxmarvel .saynaxmarvel-body .box-text ul {
-    list-style-type: disc;
-    margin-left: 25px;
-}
-
-#saynaxmarvel .saynaxmarvel-media {
-    margin-top: 50px;
-}
-
-#saynaxmarvel .saynaxmarvel-media h3 {
-    margin-bottom: 25px;
-}
-
-#saynaxmarvel .saynaxmarvel-media .media {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#saynaxmarvel .saynaxmarvel-media .media a {
-    text-decoration: none;
-    color: var(--white-ad-color);
-    padding: 20px 60px;
-    border: 2px solid var(--white-ad-color);
-    border-radius: 20px;
-    margin: 5px;
-}
-
-
-/* mobile */
-
-@media screen and (max-width: 600px) {
-    #header-top2 {
-        background-color: var(--primary-ad-color);
+@media screen and (min-width:768px) {
+    p {
+        text-align: justify;
     }
-    .brand-mobile {
-        color: var(--white-ad-color);
-        padding: 20px 0;
-    }
+}
+
+.zoom {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
 }

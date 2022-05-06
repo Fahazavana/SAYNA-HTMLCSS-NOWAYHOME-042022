@@ -11,11 +11,6 @@ body {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(177, 19, 19, 1) 25%);
 }
 
-h2.font-spider {
-    position: relative;
-    left: -100%
-}
-
 #hero .container {
     margin-top: 15%;
 }
@@ -132,28 +127,6 @@ h2.font-spider {
 
 #newsletter .form-check {
     margin-top: 1rem;
-}
-
-.button1 {
-    background-color: var(--white-ad-color);
-    color: var(--primary-ad-color);
-    border-radius: 40px;
-    padding: 15px 20px;
-}
-
-.button2 {
-    border: var(--white-ad-color) 2px solid;
-    color: var(--white-ad-color);
-    border-radius: 40px;
-    padding: 15px 20px;
-}
-
-.button3 {
-    border: var(--white-ad-color) 2px solid;
-    background-color: transparent;
-    color: var(--white-ad-color);
-    border-radius: 40px;
-    padding: 15px 20px;
 }
 
 #lesspiderman .button1,

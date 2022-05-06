@@ -5,6 +5,11 @@
     --red-color: #b11313;
 }
 
+body {
+    background-color: var(--primary-ad-color);
+    color: var(--white-ad-color);
+}
+
 
 /* LA partie Hero de la Page HEROS */
 
@@ -15,197 +20,123 @@
     background-size: cover;
 }
 
-
-/* Design de la partie Valeurs */
-
-#valeurs,
-#heros-info,
-#entourage {
-    background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
-    padding: 3em;
+iframe {
+    width: 100%;
+    border: none;
+    aspect-ratio: 16/9;
 }
 
-#valeurs .valeurs-head {
-    margin-bottom: 4em;
-}
-
-#valeurs h1 {
-    font-family: 'far_from_homecomingregular';
-    font-size: 2em;
-    font-weight: 100;
-}
-
-#valeurs .text,
-#heros-info .text {
-    padding-right: 2em;
-    font-size: 0.9em;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-
-/* Design de la section fondations */
-
-#fondations {
-    background-image: url(../img/img20.png);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
+#fondation {
+    width: 100%;
+    min-height: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image: url("../img/Illustration/img20.png");
 }
 
-#fondations h1 {
-    font-family: 'far_from_homecomingregular';
-    font-size: 3em;
-    padding-top: 1.5em;
+#fondation>div {
+    top: 10vw;
+    position: relative;
 }
 
-
-/* La partie Design de son Entourage */
-
-#entourage h1 {
-    font-family: 'far_from_homecomingregular';
+#fondation p {
+    font-size: 2.5vw;
+    font-weight: bold;
 }
 
-#entourage .entourage-image2 {
-    margin-top: -100px;
-    margin-left: 200px;
+#amis1,
+#amis2 {
+    padding: 0.5rem;
+    width: 60%;
+    margin: auto;
+    display: block;
 }
 
-#entourage .entourage-text {
-    text-align: justify;
-    text-justify: inter-word;
+#lesFilles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-
-/* Design partie avengers */
+#lesFilles img {
+    width: 30%;
+}
 
 #avengers {
+    padding: 3rem 0;
     background-color: var(--red-color);
-    background-size: 675px 100%;
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-position: center right;
 }
 
-.slide1 {
-    background-image: url(../img/heroslider1.png);
+#avengers .left {
+    position: relative;
+    z-index: 15;
 }
 
-.slide2 {
-    background-image: url(../img/heroslider2.png);
+.slider {
+    z-index: 0;
+    padding: 1rem 0;
+    position: absolute;
+    right: 0;
 }
 
-.slide3 {
-    background-image: url(../img/heroslider3.png);
+.slider img.slider-item {
+    position: relative;
+    width: 100%;
+    animation: slider 1s;
+    height: auto;
+    display: none;
 }
 
-.slide4 {
-    background-image: url(../img/heroslider4.png);
+.slider img.slider-item:first-of-type {
+    display: block;
 }
 
-.slide5 {
-    background-image: url(../img/heroslider5.png);
+@keyframes slider {
+    from {
+        transform: translate(-100%);
+        left: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
-
-#avengers h1 {
-    font-family: 'far_from_homecomingregular';
-}
-
-#avengers .avengers-text {
-    text-align: justify;
-    margin-left: 0;
-    font-size: 13px;
-}
-
-.avengers-img {
-    width: 200px;
-    margin: 10px;
-}
-
-
-/* Design Partie Univers */
 
 #univers {
-    background-image: url(../img/img33.png);
-    background-color: var(--primary-ad-color);
-    height: 630px;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/img33.png");
 }
 
-#univers h3 {
-    font-family: 'far_from_homecomingregular';
+.bg-transparent-blue {
+    padding: 3rem 0;
+    background-color: rgba(17, 75, 146, 0.6);
 }
 
-#univers .univers-content {
-    width: 500px;
-    background-color: #114b9298;
-    padding: 15px 35px;
-    position: relative;
-    left: 50%;
-    top: 3%;
-}
-
-#univers .univers-text {
-    text-align: justify;
-    font-size: 15px;
-}
-
-
-/* Design Mobile */
-
-@media screen and (max-width: 600px) {
-    .valeurs-head {
-        text-align: center;
-    }
-    .valeurs-head h3 {
-        font-size: 15px;
+@media screen and (min-width:768px) {
+    #amis1 {
+        width: 60%;
         padding: 0;
-    }
-    #valeurs .text,
-    #heros-info .text {
-        padding-right: 0;
-    }
-    #valeurs .video iframe {
-        width: 320px;
-    }
-    /* mobile fondations */
-    #fondations {
-        text-align: center;
-        padding-top: 67px;
-    }
-    #fondations h1 {
-        font-size: 25px;
-    }
-    #fondations h3 {
-        font-size: 15px;
-    }
-    /* mobile entourage */
-    #entourage .entourage-head {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    #entourage .entourage-image2 {
-        margin-top: 30px;
+        display: block;
         margin-left: 0;
-        margin-bottom: 18px;
     }
-    #entourage h1 {
-        font-size: 25px;
-        margin-bottom: 26px;
+    #amis2 {
+        width: 65%;
+        padding: 0;
+        margin-left: 35%;
+        margin-top: -15%;
     }
-    #entourage .entourage3-img {
+    #lesFilles {
         display: flex;
-        justify-content: center;
-        width: 43%;
-        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
     }
-    #avengers,
-    #univers {
-        display: none;
+    #lesFilles img {
+        width: 45%;
+        height: auto;
     }
 }
 

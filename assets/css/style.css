@@ -129,8 +129,35 @@ footer .list-inline-item a .ic-1 {
     opacity: 0;
 }
 
+.button1 {
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.button2 {
+    border: var(--white-ad-color) 2px solid;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.button3 {
+    border: var(--white-ad-color) 2px solid;
+    background-color: transparent;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
 h1 {
     font-family: 'far_from_homecomingregular';
+}
+
+h2.font-spider {
+    position: relative;
+    left: -100%
 }
 
 
