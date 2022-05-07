@@ -13,12 +13,16 @@
 </head>
 
 <body>
-    <div class="pop-up-overlay d-none">
-        <div class="card w-50 mx-auto py-5 bg-white">
-            <h1 class="text-center p-4">Succes</h1>
-            <button class="fermer btn btn-primary w-50 mx-auto">Fermer</button>
+    <!-- POP-UP -->
+    <div class="pop-up-bg">
+        <div class="popup-wrapper">
+            <div class="card mx-auto py-3">
+                <p class="text-center font-spider fs-2 pop-title p-4">Succes</p>p>
+                <button class="fermer btn btn-primary w-50 mx-auto mb-2">Fermer</button>
+            </div>
         </div>
     </div>
+
     <!-- Navigation bar-->
     <header>
         <nav class="navbar navbar-expand-md">
@@ -147,7 +151,7 @@
                     <p class=" text-center">
                         Remplis le formulaire ci dessous afin de recevoir ton propre costume
                     </p>
-                    <form class="col-md-10 mx-auto" action="." method="post">
+                    <form action="." class="col-md-10 mx-auto become-spider">
                         <input class="form-control mb-4" type="text" name="nom" id="nom" placeholder="Nom">
                         <input class="form-control mb-4" type="text" name="prenom" id="prenom" placeholder="Prénom">
                         <input class="form-control mb-4" type="text" name="taille" id="taille" placeholder="Taille (cm)">
@@ -171,13 +175,13 @@
                         <p> L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter ! </p>
                     </div>
                     <div class=" col-8 col-md-6  ms-md-0 my-5">
-                        <form action="." method="post">
+                        <form class="newsletter" action="." method="post">
                             <div class="col-md-10 mb-5">
                                 <input class="form-control bg-transparent mb-4" type="text" name="nomPrenom" id="nomPrenom" placeholder="Nom Prénom">
                                 <input class="form-control bg-transparent mb-4" type="email" name="email2" id="email2" placeholder="Adresse e-mail">
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" name="check" id="check" value="checkedValue">
+                                <input type="checkbox" class="form-check-input" name="check" id="check" value="">
                                 <label class="form-check-label" for="check">
                                     Je connais et j'accepte la <a class="text-white" href="#">la politique de
                                         confidentialité </a> de Sayna X Marvel

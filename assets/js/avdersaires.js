@@ -11,7 +11,4 @@ $(document).ready(function() {
         $(".card-name>h2", this).animate({ 'left': '3%' });
         $(".card-body", this).slideUp(1500);
     });
-
-
-
 });

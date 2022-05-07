@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
     });
 
-    $("img:not(.ic-1)").hover(function() {
+    $("img:not(.ic-1,.navbar-brand img)").hover(function() {
         $(this).toggleClass("zoom")
 
     }, function() {

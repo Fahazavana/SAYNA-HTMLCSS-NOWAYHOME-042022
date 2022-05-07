@@ -70,7 +70,7 @@ iframe {
 
 #avengers .left {
     position: relative;
-    z-index: 15;
+    z-index: 5;
 }
 
 .slider {
@@ -88,12 +88,15 @@ iframe {
     display: none;
 }
 
+
+/* 
 .slider img.slider-item:first-of-type {
     display: block;
-}
+} */
 
 @keyframes slider {
     from {
+        opacity: 0;
         transform: translate(-100%);
         left: 0;
     }
@@ -140,7 +143,12 @@ iframe {
     }
 }
 
-.zoom {
+.zoomIn {
     transform: scale(1.3);
+    transition: all 1s ease;
+}
+
+.zoomOut {
+    transform: scale(1);
     transition: all 1s ease;
 }

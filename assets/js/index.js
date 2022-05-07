@@ -6,6 +6,10 @@ $(document).ready(function() {
         $imgSpider.css("height", `${Math.floor($blueHeight)}px`)
     })
 
+    $(document).resize(function() {
+        $imgSpider.css("height", `${Math.floor($blueHeight)}px`)
+
+    });
     /*
     des erreur peuvent subvenir à code de l'annimation sur spiderman
      */
